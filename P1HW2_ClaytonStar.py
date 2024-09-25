@@ -23,11 +23,15 @@ print()
 print("------Travel Expenses-------")
 print()
 print(f"Location: {dest}")
-print(f"Inital Buget: {bud}")
+print(f"Inital Buget: ${bud:.2f}")
 print()
-print(f"Fuel: {gas}")
-print(f"Accommodation: {acc}")
-print(f"Food: {food}")
+print(f"Fuel: ${gas:.2f}")
+print(f"Accommodation: ${acc:.2f}")
+print(f"Food: ${food:.2f}")
 print()
-bal = bud - gas - acc - food
-print(f"Remaining Balance: {bal}")
+
+# Check if user is over or under budget
+if bud2 > bud:
+    print(f"WARNING: You are over budger by ${bud - bud2:.2f}!!!")
+else:
+    print(f"Great! You are under budget by {bal:.2f}")
