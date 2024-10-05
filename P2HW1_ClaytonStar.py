@@ -7,10 +7,10 @@
 print ("---This program calcutes and display travel expenses---")
 print()
 bud = float(input("Enter your budget:"))
-dest = input("Enter Destination:")
-gas = float(input("Enter what you will spend on gas:"))
-acc = float(input("Enter what you think you will spend on accommodation:"))
-food = float(input("Enter what you spend on food:"))
+dest = input("Enter your travel Destination:")
+gas = float(input("Enter how much will you spend on gas:"))
+acc = float(input("Enter how much will you need for accommodation:"))
+food = float(input("Enter how much you will need for food:"))
 
 # Calculate the total planned budget
 bud2 = gas + acc + food
@@ -20,11 +20,15 @@ bal = bud - gas - acc - food
 
 # Output the balances
 print()
-print("------Travel Expenses-------")
+print("--------------Travel Expenses----------------")
+print(f"Location:                   {dest}")
+print(f"Inital Buget:              ${bud:.2f}")
+print(f"Fuel:                      ${gas:.2f}")
+print(f"Accommodation:             ${acc:.2f}")
+print(f"Food:                      ${food:.2f}")
+print('---------------------------------------------')
 print()
-print(f"Location: {dest}")
-print(f"Inital Buget: ${bud:.2f}")
-print(f"Fuel: ${gas:.2f}")
-print(f"Accommodation: ${acc:.2f}")
-print(f"Food: ${food:.2f}")
+print(f"remaining balance:         ${bal:.2f}")
+
+
 print()
