@@ -30,8 +30,4 @@ print(f"Accommodation: ${acc:.2f}")
 print(f"Food: ${food:.2f}")
 print()
 
-# Check if user is over or under budget
-if bud2 > bud:
-    print(f"WARNING: You are over budger by ${bud2 - bud:.2f}!!!")
-else:
-    print(f"Great! You are under budget by ${bal:.2f}")
+
