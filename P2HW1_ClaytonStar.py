@@ -30,5 +30,3 @@ print('---------------------------------------------')
 print()
 print(f"remaining balance:         ${bal:.2f}")
 
-
-print()
