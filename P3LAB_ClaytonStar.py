@@ -3,15 +3,22 @@
 #P3LAB
 # Calculates the amount of money into Dollars, Quarters, Dimes, Nickels, and Pennies.
 
-#Enter calculations amount$52,22 in dollars, Quarters, Dimes, Nickels, and pennies.
-price = $52.22
-decimal_places = .2f
+#Have the user enter the dollar amount.
+print(f'I have {dollars} dollar(s), {quarters} quarter(s), {dimes} dime(s), {nickels) nickel(s), and {pennies penn(ies)}.")
+                                                                                                      
+total_amount//1.00
+total_amount//total_change % 1.00
 
-money = ['dollars', 'quarters', 'Dimes', 'Nickels','Pennies']
+total_amount//25
+total_amount = total_change % 25
 
-print(money)
-#Calculate the cost costs into the right money catoriges.
+total_amount// 10
+total_amount = total_change % 10
 
-print("Enter the amount to be calculated")
-print("You have $52.22 sort into the corrected money cateriges.")
+total_amount// 5
+total_amount = total_change %5
+
+total_amount//1
+total_amount = total_change % 1
+print("Enter the dollar amount")
 
