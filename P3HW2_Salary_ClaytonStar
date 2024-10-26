@@ -1,7 +1,9 @@
-# Star Clayton
+#Star Clayton
 #Oct 27, 2024
-# P3HW2_Salary
-#This program calculates the gross pay for an employee based on hours worked and overtime.
+#P3HW2_Salary
+#Calculate salary
+
+#Program will take input and calculate and display nicely. 
 
 
 # Initialize variables for totals
@@ -18,7 +20,7 @@ total_employees = 0
 
 # Main loop to input employee data
 while True:
-    employee_name = input("Enter employee's name: ")
+    employee_name = input("Enter employee's name: 'none' to exit  ")
     
     if employee_name.lower() == 'none':
         break
@@ -53,7 +55,8 @@ while True:
     print(f"{hours_worked:.1f}\t\t{pay_rate:.2f}\t{overtime_hours:.1f}\t\t"
     f"${overtime_pay:.2f}\t\t${regular_pay:.2f}\t\t${gross_pay:.2f}\n")
 
-
-
-        
-   
+    # Display totals
+print(f"Total number of employees entered: {total_employees}")
+print(f"Total amount paid for overtime: ${total_overtime_pay:.2f}")
+print(f"Total amount paid for regular hours: ${total_regular_pay:.2f}")
+print(f"Total amount paid in gross: ${total_gross_pay:.2f}")
